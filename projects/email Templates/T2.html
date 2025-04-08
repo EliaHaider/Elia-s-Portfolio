@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You're Invited!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .email-wrapper {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-image: url('../assets/images/T2/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 40px;
+            color: #fff;
+            border-bottom: 5px solid #007bff;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            margin-top: -20px;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .event-image {
+            margin: 25px 0;
+        }
+
+        .event-image img {
+            width: 240px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <h1>You're Invited!</h1>
+        </div>
+
+        <!-- Event Details Section -->
+        <div class="section">
+            <h2>Join Us for an Exclusive Corporate Event</h2>
+            <p>We're excited to invite you to an upcoming event that promises to be both inspiring and enriching. Here are the details:</p>
+            <p><strong>Date:</strong> April 20, 2025</p>
+            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Location:</strong> Virtual Gathering</p>
+
+            <!-- Keynote Speaker Image -->
+            <div class="event-image">
+                <img src="../assets/images/T2/keynote.png" alt="Keynote Speaker">
+            </div>
+
+            <!-- RSVP Button -->
+            <a href="../example.html" class="cta-button">RSVP Now</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>For inquiries, contact us at <a href="../example.html">info@company.com</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

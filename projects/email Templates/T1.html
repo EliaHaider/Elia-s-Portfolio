@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Fashion Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .email-wrapper {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background-color: #000;
+      text-align: center;
+      padding: 30px;
+    }
+    .header img {
+      max-width: 150px;
+      border-radius: 50%; /* Circle logo */
+      background-color: white; /* White background for the logo */
+      padding: 10px; /* Space around logo */
+    }
+    .section {
+      padding: 20px;
+      text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    .section p {
+      font-size: 16px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    /* Product Image Swipe */
+    .product-images {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      max-height: 400px;
+    }
+    .product-images .image-wrapper {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+    .product-images img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    .product-images:active .image-wrapper {
+      transform: translateX(-100%);
+    }
+
+    /* Product Description */
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .product-info h4 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .product-info p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Shine effect on CTA button */
+    .cta-button {
+      display: inline-block;
+      background-color: #e91e63;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-button::after {
+      content: '';
+      position: absolute;
+      top: -150%;
+      left: -150%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.2);
+      animation: shine 2s infinite;
+    }
+    @keyframes shine {
+      100% {
+        top: 150%;
+        left: 150%;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    .social-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #333;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      .section h2 {
+        font-size: 22px;
+      }
+      .product-card {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      .product-info h4 {
+        font-size: 16px;
+      }
+    }
+  </style>
+  <!-- Font Awesome CDN for social icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="email-wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <a href="../example.html">
+        <img src="../assets/images/T1/logo.png" alt="Brand Logo" />
+      </a>
+    </div>
+
+    <!-- New Arrivals Section -->
+    <div class="section">
+      <h2>🌟 Discover Our Latest Pieces</h2>
+      <p>Explore the newest trends with our exclusive collection of fashion-forward clothing. From classic denim to elegant dresses, there's something for every style.</p>
+
+      <!-- Swipeable Product Images -->
+      <div class="product-images">
+        <div class="image-wrapper">
+          <img src="../assets/images/T1/p1.png" alt="Product 1">
+          <img src="../assets/images/T1/p2.png" alt="Product 2">
+          <img src="../assets/images/T1/p3.png" alt="Product 3">
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-info">
+        <h4>Denim Classic</h4>
+        <p>Our Denim Classic is a perfect blend of retro charm and modern comfort. Made for all-day wear, it’s versatile enough to style for any occasion, whether it's casual or semi-formal. Add a touch of class to your wardrobe with this must-have piece.</p>
+      </div>
+
+      <!-- Shop Now Button -->
+      <a href="../example.html" class="cta-button">Shop Now</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Stay Connected:</p>
+      <div class="social-icons">
+        <a href="../example.html"><i class="fab fa-facebook"></i></a>
+        <a href="../example.html"><i class="fab fa-instagram"></i></a>
+        <a href="../example.html"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>
+        <a href="../example.html">contact@fashionbrand.com</a><br>
+        <a href="../example.html">123 Fashion Street, Style City</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
