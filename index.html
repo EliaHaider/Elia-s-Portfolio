@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elia Haider - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div>Elia Haider</div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <img src="images/Profile.png" alt="Profile Picture" class="profile-img">
+    <h1>Elia Haider</h1>
+    <p id="typed-text">Front-End Developer</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about hidden">
+    <h2>About Me</h2>
+    <p>
+      I’m Elia Haider, a passionate front-end developer from Gilgit-Baltistan, Skardu, Pakistan. I completed my education at City Public School Skardu. I learned web development from Creative Vision Institute Skardu. I now have 1 year of hands-on experience. I love turning creative ideas into clean design and interactive code.
+    </p>
+    <div class="info-grid">
+      <div class="info-item">📍 Skardu, Pakistan</div>
+      <div class="info-item">💻 Web Development</div>
+      <div class="info-item">🏫 City Public School</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects hidden">
+    <h2>MY Work</h2>
+    <div class="project-grid">
+      <a href="Projects/email Templates/T1.html" class="project-card">
+        <img src="images/T1.jpeg" alt="Newsletter Template Thumbnail" class="project-img">
+        <h3>Newsletter Template | Email Template</h3>
+      </a>
+      <a href="Projects/Landing Pages/L1.html" class="project-card">
+        <img src="images/T2.jpeg" alt="Product Landing Page Thumbnail" class="project-img">
+        <h3>Product Landing Page</h3>
+      </a>
+      <a href="Projects/email Templates/T2.html" class="project-card">
+        <img src="images/T3.jpeg" alt="Event Invitation Template Thumbnail" class="project-img">
+        <h3>Event Invitation Template | Email Template</h3>
+      </a>
+      <a href="Projects/Landing Pages/L2.html" class="project-card">
+        <img src="images/T4.jpeg" alt="Service Landing Page Thumbnail" class="project-img">
+        <h3>Service Landing Page</h3>
+      </a>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact hidden">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+    <a href="mailto:haiderhashmi11220@gmail.com" class="contact-item">📧 Email</a>
+    <a href="https://www.instagram.com/elia_haider_ig/" target="_blank" class="contact-item">📸 Instagram</a>
+  </div>
+
+  <!-- Copyable Email with Icon -->
+  <div style="margin-top: 10px; text-align: center;">
+    <p style="font-family: monospace; font-size: 14px; background-color: #f4f4f4; padding: 8px 12px; border-radius: 5px; display: inline-flex; align-items: center;">
+      <span id="copyEmail">haiderhashmi11220@gmail.com</span>
+      <button onclick="copyEmail()" title="Copy Email" style="margin-left: 8px; cursor: pointer; background: none; border: none; font-size: 16px;">
+        📋
+      </button>
+    </p>
+  </div>
+</section>
+
+<!-- JavaScript for Copy -->
+<script>
+  function copyEmail() {
+    const emailText = document.getElementById("copyEmail").textContent;
+    navigator.clipboard.writeText(emailText).then(() => {
+      alert("Email copied to clipboard!");
+    });
+  }
+</script>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
